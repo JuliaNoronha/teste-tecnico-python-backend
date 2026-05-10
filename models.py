@@ -3,9 +3,8 @@ from sqlalchemy import Column, Integer, String, DateTime
 
 from database import Base
 
-
 class RegistroFocoModel(Base):
-    __tablename__: "registros_foco"
+    __tablename__ = "registro"
 
     id = Column(Integer, primary_key=True, index=True)
     nivel_foco = Column(Integer)
