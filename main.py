@@ -19,6 +19,12 @@ def get_db():
 
 @app.post("/registro-foco", response_model=schemas.RegistroFocoResponse)
 def criar_registro(registro: schemas.RegistroFocoCreate, db: Session = Depends(get_db)):
+    if not (1 <= registro.nivel_foco <= 5):
+        raise HTTPException(
+            status_code=400,
+            detail="O nível de foco precisa ser um número entre 1 e 5."
+                    "Sendo 1 para 'muito distraído' e 5 para 'estado de flow'."
+        )
     novo_registro = models.RegistroFocoModel(
         nivel_foco=registro.nivel_foco,
         tempo_minutos=registro.tempo_minutos,
