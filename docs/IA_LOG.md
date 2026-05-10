@@ -6,10 +6,10 @@
 - [x] Configuração do Ambiente: Criar o ambiente virtual e instalar as dependências.
 - [x] Definição do Modelo de Dados: Decidir como as informações serão estruturadas(Campos obrigatórios + extras).
 - [x] Escolha do framework e Persistência
-- [ ] Implementação do Endpoint POST: Criar a rota para receber e validar os daods de foco.
-- [ ] Implementação do Endpoint GET: Criar a lógica de cálculo (média e soma) e o motor de feedback.
-- [ ] Tratamento de erros: Garantir que a API não aceite ```nivel_foco``` inválido. 
-- [ ] Documentação (README): Instruções de como rodar e testar.
+- [x] Implementação do Endpoint POST: Criar a rota para receber e validar os daods de foco.
+- [x] Implementação do Endpoint GET: Criar a lógica de cálculo (média e soma) e o motor de feedback.
+- [x] Tratamento de erros: Garantir que a API não aceite ```nivel_foco``` inválido. 
+- [x] Documentação (README): Instruções de como rodar e testar.
 
     
     Framework escolhido: FastApi, pois é moderno, rápido e já gera documentação automática(Swagger). Havia outras duas opções, Flask também seria uma boa escolha
